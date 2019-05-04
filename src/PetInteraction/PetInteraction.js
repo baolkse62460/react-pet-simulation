@@ -79,8 +79,7 @@ export default class PetInteraction extends Component {
 
   handleExerciseStat = () => {
     const { healthy } = this.state;
-    if (healthy === 0)
-      return;
+    if (healthy === 0) return;
     this.setState({
       healthy: healthy - 1,
     });
